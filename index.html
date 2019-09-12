@@ -1,50 +1,88 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Responsive Template</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
-</head>
-<body>
-  <div class="container">
-    <header>
-    <h1>My Personal Blog</h1>
-    <nav>
-    <ul>
-      <li><a href="#" id="home">Home</a></li>
-      <li><a href="#" id="about">About</a></li>
-      <li><a href="#" id="hobbies">Hobbies</a></li>
-      <li><a href="#" id="contact">Contact me</a></li>
-      <li><p id ="location"></p></li>
-    </ul>
-    </nav>
-</header>
-    <div class="main">
-      <div class="sections">
-    <section>
-      <h2 id="title1">Come on!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ad sapiente natus aperiam. Veritatis itaque nemo porro cupiditate? Molestias vel ratione iure ipsum incidunt libero soluta deleniti consequuntur maiores est.</p>
-    </section>
-    <section>
-      <h2 id="title2">Welcome to my blog</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint facilis vel velit enim repudiandae quos, commodi accusamus veniam. Magni assumenda pariatur non, in dolor, deleniti optio vitae quisquam! Consequuntur, sequi.</p>
-    </section>
-    <section class="articles">
-      <h2>Posts</h2>
-      <article>Html5, new tags</article>
-      <article>Javax Library</article>
-      <article>Django is Cool</article>
-      <article>Python 3.5 is here</article>
-    </section>
-</div>
-      <aside>
-    <h3>Widgets</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et, animi quibusdam quia pariatur dolorum omnis assumenda cupiditate incidunt repellat nam accusamus eligendi fugiat ratione magni ipsa debitis earum dolor!</p>
-</aside>
-    </div>   
-    <footer>
-    Copyright 2019 <a href="http://carmoreno.github.io" target="_blank">Juan Esteban Murillo Vélez</a>
-    </footer>
- </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>La Fuente de Voltaje</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="top">
+        <h1>La Fuente de voltaje</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#transformador">Transformador</a></li>
+            <li><a href="#rectificador">Rectificador</a></li>
+            <li><a href="#filtro">Filtro</a></li>
+            <li><a href="#regulador">Regulador</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="sections" id="home">
+          <section>
+            <h2 id="title1">Fuente de Voltaje</h2>
+            <p>
+              Es un dispositivo que convierte la tensión alterna de la red de suministro, en una o varias tensiones, prácticamente continuas, que alimentan los distintos circuitos del aparato electrónico al que se conecta (ordenador, televisor, impresora, router, etc.). Las fuentes de alimentación, para dispositivos electrónicos, pueden clasificarse básicamente como fuentes de alimentación lineales y conmutadas. Las lineales tienen un diseño relativamente simple, que puede llegar a ser más complejo cuanto mayor es la corriente que deben suministrar, sin embargo su regulación de tensión es poco eficiente. Una fuente conmutada, de la misma potencia que una lineal, será más pequeña y normalmente más eficiente pero será más compleja y por tanto más susceptible a averías.
+            </p>
+          </section>
+          <section class="articles">
+            <h2>Composición de la fuente de VOLTAJE</h2>
+            <article>Transformador</article>
+            <article>Rectificador</article>
+            <article>Filtro</article>
+            <article>Regulador</article>
+          </section>
+          <section class="transform" id="transformador">
+            <h2>Transformador</h2>
+            <p>
+              El Transformador proporciona una tensión alterna senoidal, aumenta o disminuye la amplitud de una tensión alterna, mantiene la frecuencia y proporciona aislamiento galvánico.
+            </p>
+          </section>
+          <section id="rectificador">
+            <h2>Rectificador</h2>
+            <p>
+              Proporciona una señal pulsante, compuesta de una señal continua y rizada.
+            </p>
+          </section>
+          <section id="filtro">
+            <h2>Filtro</h2>
+            <p>
+              Proporciona una señal continua, reduce el rizado de la tensión, aísla la componente alterna de la continua y asegura un comportamiento lineal.
+            </p>
+          </section>
+          <section id="regulador">
+            <h2>Regulador</h2>
+            <p>
+              Trata de mantener una tensión estable en la carga, con una realimentación negativa, que detecta variaciones de tensión de salida.
+            </p>
+          </section>
+
+          
+        </div>
+        <aside>
+          <div class="widget-video">
+            <h3>Video 1</h3>
+            <iframe width="100%" src="https://www.youtube.com/embed/j80suG-ul_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="widget-image">
+            <h3>Video 1</h3>
+            <iframe width="100%" src="https://www.youtube.com/embed/j80suG-ul_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="widget-image">
+            <h3>Video 1</h3>
+            <iframe width="100%" src="https://www.youtube.com/embed/j80suG-ul_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+        </aside>
+      </div>
+      <footer>
+        Copyright 2019
+        <a href="#">Juan Esteban Murillo Vélez</a>
+        <a href="#top" class="top">Volver arriba</a>
+      </footer>
+    </div>
+  </body>
 </html>
