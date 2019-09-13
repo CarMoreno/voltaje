@@ -7,8 +7,8 @@
     <link rel="icon" type="image/png" href="imgs/icono.png" />
   </head>
   <body>
-    <div class="container">
-      <header id="top">
+    <div class="container"> <!-- Contenedor principal-->
+      <header id="top"> <!--Menu superior-->
         <h1>La Fuente de voltaje</h1>
         <nav>
           <ul>
@@ -20,17 +20,25 @@
           </ul>
         </nav>
       </header>
-      <div class="main">
-        <div class="sections" id="home">
+      <div class="main"> <!--Contenedor de padre del contenido-->
+        <div class="sections" id="home"> <!--Contendor de secciones-->
+          
+          <!-- Seccion 1: Fuente de Voltaje-->
           <section>
             <h2 id="title1">Fuente de Voltaje</h2>
             <p>
               Es un dispositivo que convierte la tensión alterna de la red de suministro, en una o varias tensiones, prácticamente continuas, que alimentan los distintos circuitos del aparato electrónico al que se conecta (ordenador, televisor, impresora, router, etc.). Las fuentes de alimentación, para dispositivos electrónicos, pueden clasificarse básicamente como fuentes de alimentación lineales y conmutadas.
+            </p>
+            <div class="widget-video text-center">
+              <iframe width="100%" src="https://www.youtube.com/embed/j80suG-ul_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <em>Generacion del Board usando Eagle con fuente de 5V y 12V y Proceso para quemar baquelas. </em>  
+            </div>
             <p>
               Las lineales tienen un diseño relativamente simple, que puede llegar a ser más complejo cuanto mayor es la corriente que deben suministrar, sin embargo su regulación de tensión es poco eficiente. Una fuente conmutada, de la misma potencia que una lineal, será más pequeña y normalmente más eficiente pero será más compleja y por tanto más susceptible a averías.
             </p>
-            </p>
           </section>
+
+          <!-- Seccion 2: Composición de la fuente de voltaje-->
           <section class="articles">
             <h2>Composición de la fuente de VOLTAJE</h2>
             <article>Transformador</article>
@@ -38,6 +46,8 @@
             <article>Filtro</article>
             <article>Regulador</article>
           </section>
+
+          <!-- Seccion 3: Transformador-->
           <section class="transform section-image" id="transformador">
             <h2>Transformador</h2>
             <div class="section-image-left">
@@ -46,9 +56,9 @@
             <div class="section-image-text">
               <p>El Transformador proporciona una tensión alterna senoidal, aumenta o disminuye la amplitud de una tensión alterna, mantiene la frecuencia y proporciona aislamiento galvánico.</p>
             </div>
-            <p>
-            </p>
           </section>
+
+          <!-- Seccion 4: Rectificador-->
           <section id="rectificador" class="section-image">
             <h2>Rectificador</h2>
             <p>
@@ -56,33 +66,29 @@
             </p>
             <img class="section-image-center" src="imgs/rectificador.gif" alt="Rectificador">
           </section>
+
+          <!-- Seccion 5: Filtro -->
           <section id="filtro">
             <h2>Filtro</h2>
             <p>
               Proporciona una señal continua, reduce el rizado de la tensión, aísla la componente alterna de la continua y asegura un comportamiento lineal.
             </p>
           </section>
+
+          <!-- Seccion 5: Regulador -->
           <section class="section-image" id="regulador">
             <h2>Regulador</h2>
             <div class="section-image-left">
-              <img src="imgs/regulador.png" alt="Transformador" class="img-responsive">
+              <img src="imgs/regulador.png" alt="Regulador" class="img-responsive">
             </div>
             <div class="section-image-text">
-              <p>
-                Trata de mantener una tensión estable en la carga, con una realimentación negativa, que detecta variaciones de tensión de salida.
-              </p>
+              <p>Trata de mantener una tensión estable en la carga, con una realimentación negativa, que detecta variaciones de tensión de salida.</p>
             </div>
           </section>
-
-          
         </div>
-        <aside>
-          <div class="widget-video text-center">
-            <h3>Video 1</h3>
-            <iframe width="100%" src="https://www.youtube.com/embed/j80suG-ul_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <em>Generacion del Board usando Eagle con fuente de 5V y 12V y Proceso para quemar baquelas. </em>
-          </div>
 
+        <!--Aside: Usado para simular Widgets-->
+        <aside>
           <div class="widget-image text-center">
             <h3>Imagen 1</h3>
             <img src="imgs/imagen1.jpeg" class="img-responsive" alt="Imagen 1">
@@ -97,6 +103,8 @@
           
         </aside>
       </div>
+
+      <!--Footer-->
       <footer>
         Copyright 2019
         <a href="#">Juan Esteban Murillo Vélez</a>

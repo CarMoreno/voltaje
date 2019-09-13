@@ -72,6 +72,7 @@ section h2 {
 
 section.section-image {
   width: 100%;
+  padding-top: 5%;
 }
 
 section.section-image div.section-image-left {
@@ -163,7 +164,7 @@ footer a {
 }
 
 footer a.top {
-  color: #ffff;
+  color: #454545;
 }
 
 footer a.top:hover {
@@ -174,8 +175,14 @@ footer a:hover {
   color: rgb(200, 80, 80);
 }
 
-div.widget-image h3,
-div.widget-video h3 {
+div.widget-video {
+  margin: 2% 0%;
+  background-color: rgb(80, 200, 80);
+  padding: 3%;
+  border-radius: 3px;
+}
+
+div.widget-image h3 {
   margin-bottom: 2%;
 }
 
@@ -183,7 +190,10 @@ div.widget-image em,
 div.widget-video em {
   display: inline-block;
   margin-top: 2%;
+  color: #252525;
 }
+
+/*Media queries para estilos responsivos*/
 
 @media only screen and (max-width: 800px) {
   div.sections {
@@ -195,10 +205,18 @@ div.widget-video em {
   nav ul li {
     margin-right: 4%;
   }
+
+  aside div {
+    margin-bottom: 2%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   div.container {
     width: 100%;
+  }
+
+  aside div {
+    margin-bottom: 2%;
   }
 }
