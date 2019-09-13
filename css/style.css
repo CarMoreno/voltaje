@@ -2,9 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Consolas';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #464646;
-    text-align: justify;
   }
   
   body {
@@ -14,6 +13,10 @@
   p {
     font-size: 1.1rem;
     line-height: 1.5rem;
+  }
+
+  .text-center {
+    text-align: center;
   }
   
   div.container {
@@ -25,6 +28,10 @@
     float: left;
     width: 58%;
     margin-right: 2%;
+  }
+
+  img.img-responsive {
+    width: 100%;
   }
   
   header,
@@ -39,6 +46,7 @@
   section,
   article {
     border-radius: 3px;
+    text-align: justify;
   }
   
   header {
@@ -55,6 +63,29 @@
     background-color: lightgreen;
     margin-bottom: 2%;
     padding: 15px;
+  }
+
+  section h2{
+    margin-bottom: 2%;
+  }
+
+  section.section-image {
+    width: 100%;
+  }
+
+  section.section-image div.section-image-left {
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+  }
+
+  section.section-image img.section-image-center {
+    margin: 0 auto;
+    display: block;
+  }
+  
+  section.section-image div.section-image-text {
+    width: 100%;
   }
   
   aside {
@@ -143,6 +174,17 @@
     color: rgb(200, 80, 80);
   }
 
+  div.widget-image h3,
+  div.widget-video h3 {
+    margin-bottom: 2%;
+  }
+
+  div.widget-image em,
+  div.widget-video em {
+    display: inline-block;
+    margin-top: 2%;
+  }
+  
   
   @media only screen and (max-width:800px) {
     div.sections {
